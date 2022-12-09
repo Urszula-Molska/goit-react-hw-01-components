@@ -1,11 +1,10 @@
-import Profile from './components/Profile';
+import { Profile } from './Profile';
 
 export const App = () => {
   return (
     <>
       <div
         style={{
-          height: '100vh',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
