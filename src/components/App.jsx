@@ -6,6 +6,7 @@ import user from '../files/user.json';
 import friends from '../files/friends.json';
 import transactions from '../files/transactions.json';
 import data from '../files/data.json';
+import PropTypes from 'prop-types';
 
 export const App = () => {
   return (
