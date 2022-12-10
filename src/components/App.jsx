@@ -19,7 +19,7 @@ export const App = () => {
           color: '#010101',
         }}
       >
-        <h3>https://github.com/Urszula-Molska/goit-react-hw-01-components</h3>
+        <h4>https://github.com/Urszula-Molska/goit-react-hw-01-components</h4>
       </div>
       <Profile
         username={user.username}
