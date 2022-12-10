@@ -2,10 +2,10 @@ import { Profile } from './Profile';
 import { Statistics } from './Statistics';
 import { FriendList } from './FriendList';
 import { TransactionHistory } from './TransactionHistory';
-import user from '../user.json';
-import data from '../data.json';
-import friends from '../friends.json';
-import transactions from '../transactions.json';
+import user from '../files/user.json';
+import data from '../files/data.json';
+import friends from '../files/friends.json';
+import transactions from '../files/transactions.json';
 
 export const App = () => {
   return (
@@ -19,7 +19,7 @@ export const App = () => {
           color: '#010101',
         }}
       >
-        React homework template modification
+        <h3>https://github.com/Urszula-Molska/goit-react-hw-01-components</h3>
       </div>
       <Profile
         username={user.username}
