@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from '../styles/Profile.module.css';
 
 export const Profile = ({
   username,
@@ -9,46 +10,27 @@ export const Profile = ({
   views,
   likes,
 }) => (
-  <div
-    style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      fontSize: 20,
-      color: '#010101',
-    }}
-    className="profile"
-  >
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 20,
-        color: '#010101',
-      }}
-      className="description"
-    >
-      <img src={avatar} alt="User avatar" className="avatar" />
-      <p className="name">{username} </p>
-      <p className="tag">{tag}</p>
-      <p className="location">{location}</p>
+  <div className={css.profileContainer}>
+    <div className={css.description}>
+      <div className={css.shape}>
+        <img src={avatar} alt="User avatar" className={css.avatar} />
+      </div>
+      <h2 className={css.name}>{username} </h2>
+      <p className={css.tag}>{tag}</p>
+      <p className={css.tag}>{location}</p>
     </div>
-
-    <ul className="stats">
-      <li>
-        <span className="label">Followers</span>
-        <span className="quantity">{followers}</span>
+    <ul className={css.stats}>
+      <li className={css.statsItem}>
+        <span className={css.label}>Followers:</span>
+        <span className={css.quantity}>{followers}</span>
       </li>
-      <li>
-        <span className="label">Views</span>
-        <span className="quantity">{views}</span>
+      <li className={css.statsItem}>
+        <span className={css.label}>Views:</span>
+        <span className={css.quantity}>{views}</span>
       </li>
-      <li>
-        <span className="label">Likes</span>
-        <span className="quantity">{likes}</span>
+      <li className={css.statsItem}>
+        <span className={css.label}>Likes:</span>
+        <span className={css.quantity}>{likes}</span>
       </li>
     </ul>
   </div>

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from '../styles/Statistics.module.css';
 
 export const Statistics = ({ title, stats }) => {
   const StatsList = stats.map(statsItem => (
