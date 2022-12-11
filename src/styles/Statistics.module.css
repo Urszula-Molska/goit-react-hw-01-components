@@ -22,8 +22,11 @@
   flex-direction: column;
   gap: 20px;
   width: 80px;
-  border: 1px black solid;
   padding: 10px 10px;
   font-weight: 600;
   font-size: 20px;
+}
+
+.label {
+  font-size: 30px;
 }

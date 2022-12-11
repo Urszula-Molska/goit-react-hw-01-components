@@ -4,8 +4,6 @@ import css from '../styles/Statistics.module.css';
 const randomColor = () =>
   `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
-console.log(typeof randomBackground);
-
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics_section}>
