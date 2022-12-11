@@ -1,20 +1,19 @@
 .statistics_section {
   width: 100%;
-  padding-bottom: 50px;
-}
-.line {
-  margin-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .title {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .statUl {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  width: auto;
 }
 
 .statLi {
@@ -25,6 +24,11 @@
   padding: 10px 10px;
   font-weight: 600;
   font-size: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border: 0.5px grey solid;
 }
 
 .label {

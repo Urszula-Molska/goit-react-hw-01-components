@@ -7,7 +7,6 @@ const randomColor = () =>
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics_section}>
-      <hr className={css.line}></hr>
       {title.length > 0 && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statUl}>
         {stats.map(statsItem => (

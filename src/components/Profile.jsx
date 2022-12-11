@@ -11,28 +11,30 @@ export const Profile = ({
   likes,
 }) => (
   <div className={css.profileContainer}>
-    <div className={css.description}>
-      <div className={css.shape}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
+    <div className={css.profileCard}>
+      <div className={css.description}>
+        <div className={css.shape}>
+          <img src={avatar} alt="User avatar" className={css.avatar} />
+        </div>
+        <h2 className={css.name}>{username} </h2>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.tag}>{location}</p>
       </div>
-      <h2 className={css.name}>{username} </h2>
-      <p className={css.tag}>{tag}</p>
-      <p className={css.tag}>{location}</p>
+      <ul className={css.stats}>
+        <li className={css.statsItem}>
+          <span className={css.label}>Followers:</span>
+          <span className={css.quantity}>{followers}</span>
+        </li>
+        <li className={css.statsItem}>
+          <span className={css.label}>Views:</span>
+          <span className={css.quantity}>{views}</span>
+        </li>
+        <li className={css.statsItem}>
+          <span className={css.label}>Likes:</span>
+          <span className={css.quantity}>{likes}</span>
+        </li>
+      </ul>
     </div>
-    <ul className={css.stats}>
-      <li className={css.statsItem}>
-        <span className={css.label}>Followers:</span>
-        <span className={css.quantity}>{followers}</span>
-      </li>
-      <li className={css.statsItem}>
-        <span className={css.label}>Views:</span>
-        <span className={css.quantity}>{views}</span>
-      </li>
-      <li className={css.statsItem}>
-        <span className={css.label}>Likes:</span>
-        <span className={css.quantity}>{likes}</span>
-      </li>
-    </ul>
   </div>
 );
 
