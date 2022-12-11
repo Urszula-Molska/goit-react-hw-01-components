@@ -1,0 +1,29 @@
+.statistics_section {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.line {
+  margin-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.statUl {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.statLi {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80px;
+  border: 1px black solid;
+  padding: 10px 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
