@@ -18,6 +18,13 @@ export const FriendList = ({ friends }) => {
     </section>
   );
 };
-FriendList.propTypes = {
-  friends: PropTypes.array,
+
+friends.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string,
+      name: PropTypes.string,
+      isOnline: PropTypes.bool,
+    })
+  ),
 };
