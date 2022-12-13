@@ -43,3 +43,25 @@ ul {
 .section {
   width: 100%;
 }
+.container {
+  max-width: 1600px;
+  padding: 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  color: #010101;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0, auto;
+}
+
+.repo {
+  font-size: 20px;
+}
+
+.section {
+  width: 100%;
+  padding-bottom: 50px;
+}
